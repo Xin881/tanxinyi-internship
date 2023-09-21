@@ -20,7 +20,7 @@ db_conn = connections.Connection(
 output = {}
 table = 'Student'
 
-@app.route("/studProfile/<int:stud_id>", methods=['GET', 'POST'])
+@app.route("/studProfile/<stud_id>", methods=['GET', 'POST'])
 def GetStudInfo(stud_id):
     # Fetch student information from the database
     cursor = db_conn.cursor()
